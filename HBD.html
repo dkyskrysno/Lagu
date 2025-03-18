@@ -15,21 +15,11 @@
 <title>Script HTML buat Kamu</title>
 <link rel="icon" type="image/x-icon" href="https://www.palingit.com/favicon.ico">
 <meta name="description" content="HTML Replit Coding">
-<!-- 
-  Made with love by Rayys!
-  
-     Blog: https://PalingIT.com
-     Instagram: @rayyarrr
-     TikTok: @rayy4r
-     Email: rayyar0703@gmail.com
-     
-  Thanks to all <3
--->
 </head>
 <body>
 	
    <!-- Ganti Audio di sini -->
-   <audio src="https://feeldreams.github.io/djikhlas.mp3" id="linkmp3" class="sembunyi"></audio>
+   <audio src="https://dkyskrysno.github.io/audio/sempurna.mp3" id="linkmp3" class="sembunyi"></audio>
    
    <div id="bodyblur">
      <!-- Wallpaper --><img src="https://feeldreams.github.io/wp9.jpg" id="wallpaper"/><div id="beneranblur"></div>
@@ -56,7 +46,7 @@
      
      <p id="halo" class="halo"></p>
      
-     <div><blockquote id='bq' data-text='㋡'>
+     <div><blockquote id='bq' data-text='From : Diky'>
        <p id="kalimat">Aku Ada Sesuatu Nih 🤣</p>
 
        <p id="pesan1">Klik 4 LOVE di Bawah! 😆</p>
@@ -69,15 +59,15 @@
 
        <p id="pesan2">Tunggu...</p>
        <!-- Pesan -->
-       <p id="pesan3">Ciee.. Ada yang Ultah Nih 🤣</p>
-       <p id="pesan4">Happy Birthday, </p>
-       <p id="pesan5" class="gaya2">Nambah tua aja ya, hehe</p>
-       <p id="pesan6" class="gaya2">Moga panjang umur biar tiap tahun bisa traktirin aku wkwk 😆</p>
-       <p id="pesan7" class="gaya2">Sehat selalu ya!</p>
+       <p id="pesan3">Ciee.. Ada yang sudah Sempro 💕</p>
+       <p id="pesan4">Happy Semprotulation yahhh, </p>
+       <p id="pesan5" class="gaya2">Semoga Cepat selesai revisinya, hehe</p>
+       <p id="pesan6" class="gaya2">Jangan Lupa Doakan ka juga hahaha</p>
+       <p id="pesan7" class="gaya2">Harus Tetap Semangattttt 🔥</p>
 
-       <p id="pesan8" class="gaya2">Canda wkwwk :v</p>
-       <p id="pesan9" class="gaya2">Oh iya, semoga di hari spesialmu ini kamu dapat menjadi pribadi yang lebih baik yaa.. 🥳</p>
-       <p id="pesan10" class="gaya2">Happy Level Up Day!! 🥳</p>
+       <p id="pesan8" class="gaya2">Nanti ada sesuatu lagi walaupun tidak spesial</p>
+       <p id="pesan9" class="gaya2">Diterima mi saja nahh nantiiiii 🫠😶‍🌫️</p>
+       <p id="pesan10" class="gaya2">Happy Semprotulation yahhh!! 🥳</p>
 
        <!-- Tombol Lanjut -->
        <p id="opsL">Klik untuk Lanjut</p>
@@ -87,12 +77,12 @@
      <div id="Tombol"><a id="By">&#128140; Lanjut</a></div>
 
      <!-- Pesan Tambahan -->
-     <p id="katatambahan" class="sembunyi">Gajadi deh soalnya kamu bau wleee 😜</p>
+     <p id="katatambahan" class="sembunyi">Oke Di tunggu yahhh</p>
      
      <!-- Pesan Ditolak -->
      <div id="pesanditolak">
        <img id="stikerditolak" src="https://feeldreams.github.io/weee.gif"/>
-       <p id="kataditolak">Yaudah kalo gamau mh 😜</p>
+       <p id="kataditolak">Jangan mi pale lo, padahal masi ada kusimpan kadoku 😔</p>
      </div>
 
    </div>
@@ -102,26 +92,25 @@
 	
   document.getElementById("kadoIn").onclick = function() {if(fungsiAwal==0){audio.play();fungsiAwal=1;kadoIn.style="transition:all .8s ease;transform:scale(10);opacity:0";wallpaper.style="transform: scale(1.5);";ket.style="display:none";setTimeout(initengahan,300);setTimeout(inipesan,500)}}
   
-  async function inipesan(){
-    var { value: nama } = await swals.fire({
-           title: 'Masukin Nama Kamu', input: 'text',
-       });
-       if(nama && nama.length < 11){
-         window.nama = nama;
-         vketikhalo="Hai, " + nama + " ✨";
-         mulainama();
-         } else {
-           await swals.fire('Ups!', 'Nama tidak boleh kosong atau lebih dari 10 karakter, ya!');inipesan();
+  function inipesan() {
+    var nama = "Cipaaa❤️"; 
+    if (nama.length < 11) {
+        window.nama = nama;
+        vketikhalo = "Hai, " + nama + " ✨";
+        mulainama();
+    } else {
+        console.log("Ups! Nama tidak boleh lebih dari 10 karakter.");
     }
-  }
+}
+
 
   //Variable Pertanyaan Akhir
-  var tanya = 'Mau Kado Gak Nih? 😶😊';
-  var opstanya = 'Ayo jawab 😆';
+  var tanya = 'Mauki Kado lo?🤔☺️';
+  var opstanya = 'Wajib Dijawab 😆';
   var tompositif = 'Mau';
   var tomnegatif = 'Engga';
     
-    async function menuju(){pesanwhatsapp = "Makasii udah ngucapin " + nama + " ultah ><";await swals.fire('OK!', 'Kirim jawabannya ke WhatsApp aku, ya!', 'success');window.location = "https://api.whatsapp.com/send?phone=&text=" + pesanwhatsapp;}
+    async function menuju(){pesanwhatsapp = "Makasih " + "Diky" + " Ucapannya ><";await swals.fire('OK!', 'Kirim jawabannya ke WhatsApp aku, ya!', 'success');window.location = "https://api.whatsapp.com/send?phone=6285656832243" + pesanwhatsapp;}
 </script>
 <script src="https://feeldreams.github.io/heihbd/script.js"></script>
 <!-- Sampai Sini -->
